@@ -1,0 +1,24 @@
+/ {
+    macros {
+        rgb_ug_status_macro: rgb_ug_status_macro {
+            label = "RGB_UG_STATUS";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&rgb_ug RGB_STATUS>;
+        };
+
+        ZMK_MACRO(AppSwitch,
+            wait-ms = <50>;
+            tap-ms = <20>;
+            bindings =
+                        <&macro_press &kp RGUI>
+                      , <&macro_tap &kp TAB>
+                      , <&tog LAYER_Nav>
+                      , <&macro_pause_for_release>
+                      , <&tog LAYER_Nav>
+                      //, <&macro_tap &skapp LGUI>
+                      , <&macro_release &kp RGUI>
+                      ;
+        )
+    };
+};

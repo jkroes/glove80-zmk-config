@@ -1,0 +1,3 @@
+&lt {
+    quick-tap-ms = <175>;  // Enable quick-tap with 175ms window
+};

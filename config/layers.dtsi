@@ -1,0 +1,6 @@
+#define LAYER_MacOS 0
+#define LAYER_PC 1
+#define LAYER_Sym 2
+#define LAYER_Nav 3
+#define LAYER_Num 4
+#define LAYER_Magic 5
