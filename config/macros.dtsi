@@ -14,9 +14,9 @@
                         <&macro_press &kp RGUI>
                       , <&macro_tap &kp TAB>
                       , <&tog layer_nav>
+                      , <&macro_wait_time 500>
                       , <&macro_pause_for_release>
                       , <&tog layer_nav>
-                      , <&macro_wait_time 500>
                       , <&macro_release &kp RGUI>
                       ;
         )
