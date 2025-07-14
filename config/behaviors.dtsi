@@ -8,7 +8,6 @@
     require-prior-idle-ms = <150>; \
     hold-trigger-on-release;
 
-
 #define LAYER_TAP_DANCE(name, layer) \
     td_##name: td_##name { \
         label = #name "_tap_dance"; \
@@ -30,12 +29,12 @@
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
 
-        esc_app_switch: esc_app_switch {
-            compatible = "zmk,tap";
+        esc_app: esc_app {
+            compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&kp ESC>, <&app_switch>;
+            bindings = <&app_switch>, <&kp>;
         };
 
         mo_tog: mo_tog {
