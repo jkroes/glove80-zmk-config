@@ -36,7 +36,7 @@
  &trans  &trans       &trans  &trans  &trans        &trans                                                         &trans  &trans        &trans  &trans  &trans          &trans
  &trans  &trans       &trans  &trans  &trans        &trans                                                         &trans  &trans        &trans  &trans  &trans          &trans
  &trans  &hml LGUI A  &trans  &trans  &hml LCTRL F  &trans                                                         &trans  &hmr RCTRL J  &trans  &trans  &hmr RGUI SEMI  &trans
- &trans  &trans       &trans  &trans  &trans        &trans  &mt LCTRL ESC  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans          &trans
+ &trans  &trans       &trans  &trans  &trans        &trans  &mt LCTRL TAB  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans          &trans
  &trans  &trans       &trans  &trans  &trans                &trans         &trans  &trans  &trans  &trans  &trans          &trans        &trans  &trans  &trans          &trans
             >;
         };
