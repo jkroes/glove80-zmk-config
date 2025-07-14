@@ -39,13 +39,5 @@
             homerow_mod
             hold-trigger-key-positions = <72 74 73 57 56 55 71 54 53 70 69 52 64 46 34 22 10 0 1 11 12 23 24 25 36 37 48 49 67 4 14 15 35 47 65 66 68 2 3 13 26 27 38 39 50 51>;
         };
-
-        // Forces &AppSwitch to display for at least 900 ms after releasing AppSwitch
-        skapp: sticky_key_app_switcher {
-            compatible = "zmk,behavior-sticky-key";
-            #binding-cells = <1>;
-            bindings = <&kp>;
-            release-after-ms = <900>;
-        };
     };
 };
