@@ -30,6 +30,14 @@
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
 
+        esc_app_switch: esc_app_switch {
+            compatible = "zmk,tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp ESC>, <&app_switch>;
+        };
+
         mo_tog: mo_tog {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;

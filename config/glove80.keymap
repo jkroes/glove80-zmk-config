@@ -13,7 +13,8 @@
 #include "bluetooth.dtsi"
 #include "positions.dtsi"
 
-/* Automatically generated keymap */
+#define esc_app &esc_app_switch 0 0
+
 / {
     keymap {
         compatible = "zmk,keymap";
