@@ -9,18 +9,18 @@
     hold-trigger-on-release;
 
 
-#define LAYER_TAP_DANCE(name, layer_num) \
+#define LAYER_TAP_DANCE(name, layer) \
     td_##name: td_##name { \
         label = #name "_tap_dance"; \
         compatible = "zmk,behavior-tap-dance"; \
         #binding-cells = <0>; \
         tapping-term-ms = <200>; \
-        bindings = <&mo layer_num>, <&tog layer_num>; \
+        bindings = <&mo layer>, <&tog layer>; \
     };
 
 / {
     behaviors {
-        /* LAYER_TAP_DANCE(sym, LAYER_Sym) */
+        /* LAYER_TAP_DANCE(sym, layer_sym) */
 
         magic: magic {
             compatible = "zmk,behavior-hold-tap";
@@ -28,6 +28,14 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&rgb_ug_status_macro>;
+        };
+
+        mo_tog: mo_tog {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&tog>;
         };
 
         hml: hml {
