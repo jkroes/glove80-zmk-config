@@ -27,12 +27,12 @@ F1-F10 (or higher)
 
         layer_macos {
             bindings = <
-&tog 1      &kp F2        &kp F3       &kp F4        &kp F5                                                                                               &kp F6       &kp F7        &kp F8       &kp F9           &kp F10
-&kp EQUAL   &kp N1        &kp N2       &kp N3        &kp N4       &kp N5                                                                          &kp N6  &kp N7       &kp N8        &kp N9       &kp N0           &kp MINUS
-&none       &kp Q         &kp W        &kp E         &kp R        &kp T                                                                           &kp Y   &kp U        &kp I         &kp O        &kp P            &kp BSLH
-&kp CAPS    &hml LCTRL A  &hml LALT S  &hml LSHFT D  &hml LGUI F  &kp G                                                                           &kp H   &hmr RGUI J  &hmr RSHFT K  &hmr RALT L  &hmr RCTRL SEMI  &kp SQT
-&none       &kp Z         &kp X        &kp C         &kp V        &kp B   &kp TAB     &none    &none        &none        &none    &esc_app 0 ESC  &kp N   &kp M        &kp COMMA     &kp DOT      &kp FSLH         &none
-&magic 8 0  &kp GRAVE     &none        &kp LEFT      &kp RIGHT            &lt 2 BSPC  &kp DEL  &mo_tog 6 6  &mo_tog 6 6  &kp RET  &lt 4 SPACE             &kp UP       &kp DOWN      &kp LBKT     &kp RBKT         &none
+&tog 1      &kp F2        &kp F3       &kp F4        &kp F5                                                                                                   &kp F6       &kp F7        &kp F8       &kp F9           &kp F10
+&kp EQUAL   &kp N1        &kp N2       &kp N3        &kp N4       &kp N5                                                                              &kp N6  &kp N7       &kp N8        &kp N9       &kp N0           &kp MINUS
+&none       &kp Q         &kp W        &kp E         &kp R        &kp T                                                                               &kp Y   &kp U        &kp I         &kp O        &kp P            &kp BSLH
+&kp CAPS    &hml LCTRL A  &hml LALT S  &hml LSHFT D  &hml LGUI F  &kp G                                                                               &kp H   &hmr RGUI J  &hmr RSHFT K  &hmr RALT L  &hmr RCTRL SEMI  &kp SQT
+&none       &kp Z         &kp X        &kp C         &kp V        &kp B   &mt LGUI TAB  &kp LSHFT  &kp LALT     &none        &none    &esc_app 0 ESC  &kp N   &kp M        &kp COMMA     &kp DOT      &kp FSLH         &none
+&magic 8 0  &kp GRAVE     &none        &kp LEFT      &kp RIGHT            &lt 2 BSPC    &kp DEL    &mo_tog 6 6  &mo_tog 6 6  &kp RET  &lt 4 SPACE             &kp UP       &kp DOWN      &kp LBKT     &kp RBKT         &none
             >;
         };
 
@@ -42,8 +42,8 @@ F1-F10 (or higher)
  &trans  &trans       &trans  &trans  &trans        &trans                                                                        &trans  &trans        &trans  &trans  &trans          &trans
  &trans  &trans       &trans  &trans  &trans        &trans                                                                        &trans  &trans        &trans  &trans  &trans          &trans
  &trans  &hml LGUI A  &trans  &trans  &hml LCTRL F  &trans                                                                        &trans  &hmr RCTRL J  &trans  &trans  &hmr RGUI SEMI  &trans
- &trans  &trans       &trans  &trans  &trans        &trans  &trans      &trans  &trans       &trans       &trans  &kp ESC         &trans  &trans        &trans  &trans  &trans          &trans
- &trans  &trans       &trans  &trans  &trans                &lt 3 BSPC  &trans  &mo_tog 7 7  &mo_tog 7 7  &trans  &lt 5 SPACE             &trans        &trans  &trans  &trans          &trans
+ &trans  &trans       &trans  &trans  &trans        &trans  &mt LCTRL TAB  &trans  &trans       &trans       &trans  &kp ESC      &trans  &trans        &trans  &trans  &trans          &trans
+ &trans  &trans       &trans  &trans  &trans                &lt 3 BSPC     &trans  &mo_tog 7 7  &mo_tog 7 7  &trans  &lt 5 SPACE          &trans        &trans  &trans  &trans          &trans
             >;
         };
 
