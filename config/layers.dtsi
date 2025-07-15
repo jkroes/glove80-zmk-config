@@ -1,6 +1,9 @@
-#define layer_macos 0
-#define layer_pc 1
-#define layer_sym 2
-#define layer_nav 3
-#define layer_num 4
-#define layer_magic 5
+#define layer_macos  0
+#define layer_pc     1
+#define layer_sym    2
+#define layer_sym_pc 3
+#define layer_nav    4
+#define layer_nav_pc 5
+#define layer_num    6
+#define layer_num_pc 7
+#define layer_magic  8
