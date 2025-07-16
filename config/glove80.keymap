@@ -14,36 +14,49 @@
 #include "positions.dtsi"
 
 /*
-F1-F10 (or higher)
-0-9
-+!@#$%^&*()_\|;:'"`~,<.>/?[{}]
-
+Function keys: F1-F10 (or higher)
+Numbers: 0-9
+Symbols: =+!@#$%^&*()-_\|;:'"`~,<.>/?[{}]
+Capslock alternative
+Navigation:
+Arrows
+LA(l/r): move word
+LG(l/r): move start/end line
+LA(u/d): move paragraph
+page up/down
+HOME/END
+shift + arrows = select ...
+spotlight
+app switcher (cmd-tab, needs arrows and tab in new layer)
+next/prev window
+move window
+maximize window
+minimize window
 */
 
 / {
     keymap {
         compatible = "zmk,keymap";
 
-
         layer_macos {
             bindings = <
-&tog 1      &kp F2        &kp F3       &kp F4        &kp F5                                                                                                   &kp F6       &kp F7        &kp F8       &kp F9           &kp F10
-&kp EQUAL   &kp N1        &kp N2       &kp N3        &kp N4       &kp N5                                                                              &kp N6  &kp N7       &kp N8        &kp N9       &kp N0           &kp MINUS
-&none       &kp Q         &kp W        &kp E         &kp R        &kp T                                                                               &kp Y   &kp U        &kp I         &kp O        &kp P            &kp BSLH
-&kp CAPS    &hml LCTRL A  &hml LALT S  &hml LSHFT D  &hml LGUI F  &kp G                                                                               &kp H   &hmr RGUI J  &hmr RSHFT K  &hmr RALT L  &hmr RCTRL SEMI  &kp SQT
-&none       &kp Z         &kp X        &kp C         &kp V        &kp B   &mt LGUI TAB  &kp LSHFT  &kp LALT     &none        &none    &esc_app 0 ESC  &kp N   &kp M        &kp COMMA     &kp DOT      &kp FSLH         &none
-&magic 8 0  &kp GRAVE     &none        &kp LEFT      &kp RIGHT            &lt 2 BSPC    &kp DEL    &mo_tog 6 6  &mo_tog 6 6  &kp RET  &lt 4 SPACE             &kp UP       &kp DOWN      &kp LBKT     &kp RBKT         &none
+&tog 1      &kp F2        &kp F3       &kp F4        &kp F5                                                                                                                               &kp F6       &kp F7        &kp F8       &kp F9           &kp F10
+&kp EQUAL   &kp N1        &kp N2       &kp N3        &kp N4       &kp N5                                                                                                          &kp N6  &kp N7       &kp N8        &kp N9       &kp N0           &kp MINUS
+&none       &kp Q         &kp W        &kp E         &kp R        &kp T                                                                                                           &kp Y   &kp U        &kp I         &kp O        &kp P            &kp BSLH
+&kp CAPS    &hml LCTRL A  &hml LALT S  &hml LSHFT D  &hml LGUI F  &kp G                                                                                                           &kp H   &hmr RGUI J  &hmr RSHFT K  &hmr RALT L  &hmr RCTRL SEMI  &kp SQT
+&none       &kp Z         &kp X        &kp C         &kp V        &kp B   &mt LGUI TAB        &kp LSHFT  &kp LALT           &none              &none    &esc_app 0           ESC  &kp N   &kp M        &kp COMMA     &kp DOT      &kp FSLH         &none
+&magic 8 0  &kp GRAVE     &none        &kp LEFT      &kp RIGHT            &lt layer_sym BSPC  &kp DEL    MO_TOG(layer_num)  MO_TOG(layer_num)  &kp RET  &lt layer_nav SPACE               &kp UP       &kp DOWN      &kp LBKT     &kp RBKT         &none
             >;
         };
 
         layer_pc {
             bindings = <
- &trans  &trans       &trans  &trans  &trans                                                                                              &trans        &trans  &trans  &trans          &trans
- &trans  &trans       &trans  &trans  &trans        &trans                                                                        &trans  &trans        &trans  &trans  &trans          &trans
- &trans  &trans       &trans  &trans  &trans        &trans                                                                        &trans  &trans        &trans  &trans  &trans          &trans
- &trans  &hml LGUI A  &trans  &trans  &hml LCTRL F  &trans                                                                        &trans  &hmr RCTRL J  &trans  &trans  &hmr RGUI SEMI  &trans
- &trans  &trans       &trans  &trans  &trans        &trans  &mt LCTRL TAB  &trans  &trans       &trans       &trans  &kp ESC      &trans  &trans        &trans  &trans  &trans          &trans
- &trans  &trans       &trans  &trans  &trans                &lt 3 BSPC     &trans  &mo_tog 7 7  &mo_tog 7 7  &trans  &lt 5 SPACE          &trans        &trans  &trans  &trans          &trans
+ &trans  &trans       &trans  &trans  &trans                                                                                &trans        &trans  &trans  &trans          &trans
+ &trans  &trans       &trans  &trans  &trans        &trans                                                          &trans  &trans        &trans  &trans  &trans          &trans
+ &trans  &trans       &trans  &trans  &trans        &trans                                                          &trans  &trans        &trans  &trans  &trans          &trans
+ &trans  &hml LGUI A  &trans  &trans  &hml LCTRL F  &trans                                                          &trans  &hmr RCTRL J  &trans  &trans  &hmr RGUI SEMI  &trans
+ &trans  &trans       &trans  &trans  &trans        &trans  &mt LCTRL TAB  &trans  &trans  &trans  &trans  &kp ESC  &trans  &trans        &trans  &trans  &trans          &trans
+ &trans  &trans       &trans  &trans  &trans                &trans         &trans  &trans  &trans  &trans  &trans           &trans        &trans  &trans  &trans          &trans
             >;
         };
 
@@ -54,18 +67,7 @@ F1-F10 (or higher)
   &none  &none  &none  &none  &none  &none                                             &none  &none  &none  &none  &none  &none
   &none  &none  &none  &none  &none  &none                                             &none  &none  &none  &none  &none  &none
   &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none   &none  &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &tog 2  &none  &none  &none  &none  &none
-            >;
-        };
-
-        layer_sym_pc {
-            bindings = <
-  &none  &none  &none  &none  &none                                                           &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none  &none                                             &none  &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none  &none                                             &none  &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none  &none                                             &none  &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none   &none  &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &tog 3  &none  &none  &none  &none  &none
+  &none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &tog 2         &none  &none  &none  &none  &none
             >;
         };
 
@@ -80,17 +82,6 @@ F1-F10 (or higher)
             >;
         };
 
-        layer_nav_pc {
-            bindings = <
-  &none  &none  &none  &none  &none                                                           &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none  &none                                             &none  &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none  &none                                             &none  &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none  &none                                             &none  &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none  &none  &none   &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none         &tog 5  &none  &none  &none  &none  &none         &none  &none  &none  &none  &none
-            >;
-        };
-
         layer_num {
             bindings = <
   &none  &none  &none  &none  &none                                                            &none  &none  &none  &none  &none
@@ -99,17 +90,6 @@ F1-F10 (or higher)
   &none  &none  &none  &none  &none  &none                                              &none  &none  &none  &none  &none  &none
   &none  &none  &none  &none  &none  &none  &none  &none  &none   &none   &none  &none  &none  &none  &none  &none  &none  &none
   &none  &none  &none  &none  &none         &none  &none  &tog 6  &tog 6  &none  &none         &none  &none  &none  &none  &none
-            >;
-        };
-
-        layer_num_pc {
-            bindings = <
-  &none  &none  &none  &none  &none                                                            &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none  &none                                              &none  &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none  &none                                              &none  &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none  &none                                              &none  &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none  &none  &none  &none  &none   &none   &none  &none  &none  &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none         &none  &none  &tog 7  &tog 7  &none  &none         &none  &none  &none  &none  &none
             >;
         };
 

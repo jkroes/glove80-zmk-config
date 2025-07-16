@@ -17,6 +17,8 @@
         bindings = <&mo layer>, <&tog layer>; \
     };
 
+#define MO_TOG(layer) &mo_tog layer layer
+
 / {
     behaviors {
         /* LAYER_TAP_DANCE(sym, layer_sym) */
