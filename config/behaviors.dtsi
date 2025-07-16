@@ -48,13 +48,13 @@
 
         /* Redefines symbols that may already be shift-paired in case of future mod change */
         SHIFT(AT, HASH)
-        SHIFT(DLLR, PRCNT)
+        SHIFT(DLLR, AMPS)
         SHIFT(BSLH, PIPE)
 
         SHIFT(MINUS, UNDER)
         SHIFT(PLUS, EQUAL)
         SHIFT(FSLH, STAR)
-        SHIFT(CARET, AMPS)
+        SHIFT(CARET, PRCNT)
 
         SHIFT(GRAVE, TILDE)
         SHIFT(SQT, DQT)
