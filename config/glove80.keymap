@@ -66,10 +66,10 @@ ______  ______      ______  ______  ______               ______         ______  
         layer_sym {
             bindings = <
 &none  &none   &none   &none   &none                                                           &none           &none          &none          &none            &none
-&none  &none   &none   &none   &none   &none                                            &none  &as GRAVE TILDE &as AT HASH    &as DLLR AMPS  &as BSLH PIPE    &none
-&none  &none   &none   &none   &none   &none                                            &none  &as MINUS UNDER &as PLUS EQUAL &as FSLH STAR  &as CARET PRCNT  &none
-&none  ______  ______  ______  ______  &none                                            &none  &as SQT DQT     &as COMMA DOT  &as SEMI COLON &as QMARK EXCL   &none
-&none  &none   &none   &none   &none   &none  &none  &none  &none  &none  &none  &none  &none  &as LPAR RPAR   &as LBKT RBKT  &as LBRC RBRC  &as LT GT        &none
+&none  &none   &none   &none   &none   &none                                            &none  &as TILDE GRAVE &as HASH AT    &as AMPS DLLR  &as PIPE BSLH    &none
+&none  &none   &none   &none   &none   &none                                            &none  &as UNDER MINUS &as EQUAL PLUS &as STAR FSLH  &as PRCNT CARET  &none
+&none  ______  ______  ______  ______  &none                                            &none  &as DQT SQT     &as DOT COMMA  &as COLON SEMI &as EXCL QMARK   &none
+&none  &none   &none   &none   &none   &none  &none  &none  &none  &none  &none  &none  &none  &as RPAR LPAR   &as RBKT LBKT  &as RBRC LBRC  &as GT LT        &none
 &none  &none   &none   &none   &none          &none  &none  &none  &none  &none  &none         &none           &none          &none          &none            &none
             >;
         };
