@@ -18,6 +18,8 @@
     };
 
 #define MO_TOG(layer) &mo_tog layer layer
+#define LT_NAV(kp) &lt layer_nav kp
+#define LT_SYM(kp) &lt layer_sym kp
 
 / {
     behaviors {
