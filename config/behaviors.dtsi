@@ -17,10 +17,18 @@
         bindings = <&mo layer>, <&tog layer>; \
     };
 
+#define LT_SYM(kp) &lt layer_sym kp
+#define LT_NAV(kp) &lt layer_nav kp
 #define MO_TOG(layer) &mo_tog layer layer
 #define MO_TOG_NUM MO_TOG(layer_num)
-#define LT_NAV(kp) &lt layer_nav kp
-#define LT_SYM(kp) &lt layer_sym kp
+#define hma(mod) homerow_mod_left mod A
+#define hms(mod) homerow_mod_left mod S
+#define hmd(mod) homerow_mod_left mod D
+#define hmf(mod) homerow_mod_left mod F
+#define hmj(mod) homerow_mod_right mod J
+#define hmk(mod) homerow_mod_right mod K
+#define hml(mod) homerow_mod_right mod L
+#define hmsemi(mod) homerow_mod_right mod SEMI
 
 / {
     behaviors {
@@ -50,12 +58,12 @@
             bindings = <&mo>, <&tog>;
         };
 
-        hml: hml {
+        homerow_mod_left: homerow_mod_left {
             homerow_mod
             hold-trigger-key-positions = <55 56 57 72 73 74 71 70 69 52 53 54 58 40 28 16 17 5 6 18 29 41 59 75 76 60 42 30 7 19 31 43 61 77 78 79 63 62 44 45 33 32 20 21 9 8>;
         };
 
-        hmr: hmr {
+        homerow_mod_right: homerow_mod_right {
             homerow_mod
             hold-trigger-key-positions = <72 74 73 57 56 55 71 54 53 70 69 52 64 46 34 22 10 0 1 11 12 23 24 25 36 37 48 49 67 4 14 15 35 47 65 66 68 2 3 13 26 27 38 39 50 51>;
         };
