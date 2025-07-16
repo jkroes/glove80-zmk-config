@@ -1,4 +1,4 @@
-#define homerow_mod \
+#define HOMEROW_MOD \
     compatible = "zmk,behavior-hold-tap"; \
     #binding-cells = <2>; \
     tapping-term-ms = <280>; \
@@ -16,6 +16,13 @@
         tapping-term-ms = <200>; \
         bindings = <&mo layer>, <&tog layer>; \
     };
+
+#define SHIFT(normal, shifted)
+    normal ## _ ## shifted: normal ## _ ## shifted { \
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp normal>, <&kp shifted>
+    mods = <(MOD_LSFT|MOD_RSFT)>;
 
 #define LT_SYM(kp) &lt layer_sym kp
 #define LT_NAV(kp) &lt layer_nav kp
@@ -62,12 +69,12 @@
         };
 
         homerow_mod_left: homerow_mod_left {
-            homerow_mod
+            HOMEROW_MOD
             hold-trigger-key-positions = <55 56 57 72 73 74 71 70 69 52 53 54 58 40 28 16 17 5 6 18 29 41 59 75 76 60 42 30 7 19 31 43 61 77 78 79 63 62 44 45 33 32 20 21 9 8>;
         };
 
         homerow_mod_right: homerow_mod_right {
-            homerow_mod
+            HOMEROW_MOD
             hold-trigger-key-positions = <72 74 73 57 56 55 71 54 53 70 69 52 64 46 34 22 10 0 1 11 12 23 24 25 36 37 48 49 67 4 14 15 35 47 65 66 68 2 3 13 26 27 38 39 50 51>;
         };
     };
