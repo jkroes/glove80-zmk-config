@@ -65,6 +65,18 @@ ______  ______      ______  ______  ______               ______         ______  
         layer_sym {
             bindings = <
 &none  &none  &none  &none  &none                                                          &none           &none          &none          &none            &none
+&none  &none  &none  &none  &none  &none                                            &none  &as GRAVE TILDE &as AT HASH    &as DLLR AMPS  &as BSLH PIPE    &none
+&none  &none  &none  &none  &none  &none                                            &none  &as MINUS UNDER &as PLUS EQUAL &as FSLH STAR  &as CARET PRCNT  &none
+&none  &none  &none  &none  &none  &none                                            &none  &as SQT DQT     &as COMMA DOT  &as SEMI COLON &as QMARK EXCL   &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &as LPAR RPAR   &as LBKT RBKT  &as LBRC RBRC  &as LT GT        &none
+&none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &none         &none           &none          &none          &none            &none
+            >;
+        };
+
+/*
+        layer_sym {
+            bindings = <
+&none  &none  &none  &none  &none                                                          &none           &none          &none          &none            &none
 &none  &none  &none  &none  &none  &none                                            &none  AS(GRAVE_TILDE) AS(AT_HASH)    AS(DLLR_AMPS)  AS(BSLH_PIPE)    &none
 &none  &none  &none  &none  &none  &none                                            &none  AS(MINUS_UNDER) AS(PLUS_EQUAL) AS(FSLH_STAR)  AS(CARET_PRCNT)  &none
 &none  &none  &none  &none  &none  &none                                            &none  AS(SQT_DQT)     AS(COMMA_DOT)  AS(SEMI_COLON) AS(QMARK_EXCL)   &none
@@ -72,6 +84,7 @@ ______  ______      ______  ______  ______               ______         ______  
 &none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &none         &none           &none          &none          &none            &none
             >;
         };
+*/
 
         layer_nav {
             bindings = <
