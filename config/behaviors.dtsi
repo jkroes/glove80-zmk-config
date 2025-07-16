@@ -19,8 +19,11 @@
 
 #define LT_SYM(kp) &lt layer_sym kp
 #define LT_NAV(kp) &lt layer_nav kp
+#define LT_NUM(kp) &lt layer_num kp
+
 #define MO_TOG(layer) &mo_tog layer layer
 #define MO_TOG_NUM MO_TOG(layer_num)
+
 #define hma(mod) homerow_mod_left mod A
 #define hms(mod) homerow_mod_left mod S
 #define hmd(mod) homerow_mod_left mod D
