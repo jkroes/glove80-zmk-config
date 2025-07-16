@@ -18,6 +18,7 @@
     };
 
 #define MO_TOG(layer) &mo_tog layer layer
+#define MO_TOG_NUM MO_TOG(layer_num)
 #define LT_NAV(kp) &lt layer_nav kp
 #define LT_SYM(kp) &lt layer_sym kp
 
