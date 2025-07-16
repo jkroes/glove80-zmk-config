@@ -34,7 +34,7 @@ Note that some things are best implemented as combos!!!
 bind pc-specific layers to the thumb clusters on the pc layer
 */
 
-#define _______  &trans
+#define ------ &trans
 
 / {
     keymap {
