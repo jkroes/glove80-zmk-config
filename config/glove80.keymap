@@ -32,6 +32,9 @@ next/prev window
 move window
 maximize window
 minimize window
+Get rid of caps once hammerspoon becomes redundant
+Note that some things are best implemented as combos!!!
+bind pc-specific layers to the thumb clusters on the pc layer
 */
 
 / {
@@ -42,8 +45,8 @@ minimize window
             bindings = <
 &tog 1      &kp F2       &kp F3      &kp F4       &kp F5                                                                                                &kp F6      &kp F7       &kp F8      &kp F9          &kp F10
 &kp EQUAL   &kp N1       &kp N2      &kp N3       &kp N4      &kp N5                                                                            &kp N6  &kp N7      &kp N8       &kp N9      &kp N0          &kp MINUS
-&none       &kp Q        &kp W       &kp E        &kp R       &kp T                                                                             &kp Y   &kp U       &kp I        &kp O       &kp P           &kp BSLH
-&kp CAPS    &hma(LCTRL)  &hms(LALT)  &hmd(LSHFT)  &hmf(LGUI)  &kp G                                                                             &kp H   &hmj(RGUI)  &hmk(RSHFT)  &hml(RALT)  &hmsemi(RCTRL)  &kp SQT
+&kp CAPS    &kp Q        &kp W       &kp E        &kp R       &kp T                                                                             &kp Y   &kp U       &kp I        &kp O       &kp P           &kp BSLH
+&caps_word  &hma(LCTRL)  &hms(LALT)  &hmd(LSHFT)  &hmf(LGUI)  &kp G                                                                             &kp H   &hmj(RGUI)  &hmk(RSHFT)  &hml(RALT)  &hmsemi(RCTRL)  &kp SQT
 &none       &kp Z        &kp X       &kp C        &kp V       &kp B   &mt LGUI TAB  &kp LSHFT  &kp LALT    &none       &none    &esc_app 0 ESC  &kp N   &kp M       &kp COMMA    &kp DOT     &kp FSLH        &none
 &magic 8 0  &kp GRAVE    &none       &kp LEFT     &kp RIGHT           LT_SYM(BSPC)  &kp DEL    MO_TOG_NUM  MO_TOG_NUM  &kp RET  LT_NAV(SPACE)           &kp UP      &kp DOWN     &kp LBKT    &kp RBKT        &none
             >;
@@ -62,12 +65,12 @@ minimize window
 
         layer_sym {
             bindings = <
-&none  &none  &none  &none  &none                                                           &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                             &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                             &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                             &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none   &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none                                                          &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
 
@@ -84,11 +87,11 @@ minimize window
 
         layer_num {
             bindings = <
-&none  &none  &none  &none  &none                                                           &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                             &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                             &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                             &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none   &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none                                                          &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
