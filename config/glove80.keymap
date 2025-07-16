@@ -42,12 +42,12 @@ bind pc-specific layers to the thumb clusters on the pc layer
 
         layer_macos {
             bindings = <
-&tog 1      &kp F2       &kp F3      &kp F4       &kp F5                                                                                             &kp F6      &kp F7       &kp F8      &kp F9     &kp F10
-&none       &none        &none       &none        &none       &none                                                                          &none   &none       &none        &none       &none      &none
-&kp CAPS    &kp Q        &kp W       &kp E        &kp R       &kp T                                                                          &kp Y   &kp U       &kp I        &kp O       &kp P      &none
-&caps_word  &hma(LCTRL)  &hms(LALT)  &hmd(LSHFT)  &hmf(LGUI)  &kp G                                                                          &kp H   &hmj(RGUI)  &hmk(RSHFT)  &hml(RALT)  &kp RCTRL  &none
-&kp CAPS    &kp Z        &kp X       &kp C        &kp V       &kp B   &mt LGUI TAB  &kp LSHFT  &kp LALT  &none  &none        &esc_app 0 ESC  &kp N   &kp M       &none        &none       &none      &none
-&magic 8 0  &none        &none       &kp LEFT     &kp RIGHT           LT_SYM(BSPC)  &kp DEL    &none     &none  LT_NUM(RET)  LT_NAV(SPACE)           &kp UP      &kp DOWN     &none       &none      &none
+&tog 1                &kp F2       &kp F3      &kp F4       &kp F5                                                                                             &kp F6      &kp F7       &kp F8      &kp F9     &kp F10
+&none                 &none        &none       &none        &none       &none                                                                          &none   &none       &none        &none       &none      &none
+&kp CAPS              &kp Q        &kp W       &kp E        &kp R       &kp T                                                                          &kp Y   &kp U       &kp I        &kp O       &kp P      &none
+&caps_word            &hma(LCTRL)  &hms(LALT)  &hmd(LSHFT)  &hmf(LGUI)  &kp G                                                                          &kp H   &hmj(RGUI)  &hmk(RSHFT)  &hml(RALT)  &kp RCTRL  &none
+&kp CAPS              &kp Z        &kp X       &kp C        &kp V       &kp B   &mt LGUI TAB  &kp LSHFT  &kp LALT  &none  &none        &esc_app 0 ESC  &kp N   &kp M       &none        &none       &none      &none
+&magic layer_magic 0  &none        &none       &kp LEFT     &kp RIGHT           LT_SYM(BSPC)  &kp DEL    &none     &none  LT_NUM(RET)  LT_NAV(SPACE)           &kp UP      &kp DOWN     &none       &none      &none
             >;
         };
 
@@ -72,19 +72,6 @@ ______  ______      ______  ______  ______               ______         ______  
 &none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &none         &none           &none          &none          &none            &none
             >;
         };
-
-/*
-        layer_sym {
-            bindings = <
-&none  &none  &none  &none  &none                                                          &none           &none          &none          &none            &none
-&none  &none  &none  &none  &none  &none                                            &none  AS(GRAVE_TILDE) AS(AT_HASH)    AS(DLLR_AMPS)  AS(BSLH_PIPE)    &none
-&none  &none  &none  &none  &none  &none                                            &none  AS(MINUS_UNDER) AS(PLUS_EQUAL) AS(FSLH_STAR)  AS(CARET_PRCNT)  &none
-&none  &none  &none  &none  &none  &none                                            &none  AS(SQT_DQT)     AS(COMMA_DOT)  AS(SEMI_COLON) AS(QMARK_EXCL)   &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  AS(LPAR_RPAR)   AS(LBKT_RBKT)  AS(LBRC_RBRC)  AS(LT_GT)        &none
-&none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &none         &none           &none          &none          &none            &none
-            >;
-        };
-*/
 
         layer_nav {
             bindings = <
