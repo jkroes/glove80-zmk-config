@@ -62,14 +62,15 @@ ______  ______      ______  ______  ______               ______         ______  
             >;
         };
 
+/* todo switch hold and tap */
         layer_sym {
             bindings = <
-&none  &none  &none  &none  &none                                                          &none           &none          &none          &none            &none
-&none  &none  &none  &none  &none  &none                                            &none  &as GRAVE TILDE &as AT HASH    &as DLLR AMPS  &as BSLH PIPE    &none
-&none  &none  &none  &none  &none  &none                                            &none  &as MINUS UNDER &as PLUS EQUAL &as FSLH STAR  &as CARET PRCNT  &none
-&none  &none  &none  &none  &none  &none                                            &none  &as SQT DQT     &as COMMA DOT  &as SEMI COLON &as QMARK EXCL   &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &as LPAR RPAR   &as LBKT RBKT  &as LBRC RBRC  &as LT GT        &none
-&none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &none         &none           &none          &none          &none            &none
+&none  &none   &none   &none   &none                                                           &none           &none          &none          &none            &none
+&none  &none   &none   &none   &none   &none                                            &none  &as GRAVE TILDE &as AT HASH    &as DLLR AMPS  &as BSLH PIPE    &none
+&none  &none   &none   &none   &none   &none                                            &none  &as MINUS UNDER &as PLUS EQUAL &as FSLH STAR  &as CARET PRCNT  &none
+&none  ______  ______  ______  ______  &none                                            &none  &as SQT DQT     &as COMMA DOT  &as SEMI COLON &as QMARK EXCL   &none
+&none  &none   &none   &none   &none   &none  &none  &none  &none  &none  &none  &none  &none  &as LPAR RPAR   &as LBKT RBKT  &as LBRC RBRC  &as LT GT        &none
+&none  &none   &none   &none   &none          &none  &none  &none  &none  &none  &none         &none           &none          &none          &none            &none
             >;
         };
 
