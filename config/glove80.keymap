@@ -15,8 +15,6 @@
 
 /*
 Function keys: F1-F10 (or higher)
-Symbols: =+!@#$%^&*()-_\|;:'"`~,<.>/?[{}]
-Capslock alternative
 Navigation:
 Arrows
 LA(l/r): move word
@@ -36,6 +34,8 @@ Note that some things are best implemented as combos!!!
 bind pc-specific layers to the thumb clusters on the pc layer
 */
 
+#define _______  &trans
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -53,12 +53,12 @@ bind pc-specific layers to the thumb clusters on the pc layer
 
         layer_pc {
             bindings = <
-&trans  &trans      &trans  &trans  &trans                                                                               &trans       &trans  &trans  &trans    &trans
-&trans  &trans      &trans  &trans  &trans       &trans                                                          &trans  &trans       &trans  &trans  &trans    &trans
-&trans  &trans      &trans  &trans  &trans       &trans                                                          &trans  &trans       &trans  &trans  &trans    &trans
-&trans  &hma(LGUI)  &trans  &trans  &hmf(LCTRL)  &trans                                                          &trans  &hmj(RCTRL)  &trans  &trans  &kp RGUI  &trans
-&trans  &trans      &trans  &trans  &trans       &trans  &mt LCTRL TAB  &trans  &trans  &trans  &trans  &kp ESC  &trans  &trans       &trans  &trans  &trans    &trans
-&trans  &trans      &trans  &trans  &trans               &trans         &trans  &trans  &trans  &trans  &trans           &trans       &trans  &trans  &trans    &trans
+------  ------      ------  ------  ------                                                                               ------       ------  ------  ------    ------
+------  ------      ------  ------  ------       ------                                                          ------  ------       ------  ------  ------    ------
+------  ------      ------  ------  ------       ------                                                          ------  ------       ------  ------  ------    ------
+------  &hma(LGUI)  ------  ------  &hmf(LCTRL)  ------                                                          ------  &hmj(RCTRL)  ------  ------  &kp RGUI  ------
+------  ------      ------  ------  ------       ------  &mt LCTRL TAB  ------  ------  ------  ------  &kp ESC  ------  ------       ------  ------  ------    ------
+------  ------      ------  ------  ------               ------         ------  ------  ------  ------  ------           ------       ------  ------  ------    ------
             >;
         };
 
