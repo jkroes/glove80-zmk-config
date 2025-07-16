@@ -47,22 +47,25 @@
         /* LAYER_TAP_DANCE(sym, layer_sym) */
 
         /* Redefines symbols that may already be shift-paired in case of future mod change */
-        SHIFT(SEMI, COLON)
-        SHIFT(SQT, DQT)
-        SHIFT(QMARK, EXCL)
-        SHIFT(COMMA, DOT)
-        SHIFT(LT, GT)
-        SHIFT(LPAR, RPAR)
-        SHIFT(LBKT, RBKT)
-        SHIFT(LBRC, RBRC)
-        SHIFT(BSLH, PIPE)
-        SHIFT(GRAVE, TILDE)
         SHIFT(AT, HASH)
         SHIFT(DLLR, PRCNT)
-        SHIFT(CARET, AMPS)
+        SHIFT(BSLH, PIPE)
+
         SHIFT(MINUS, UNDER)
         SHIFT(PLUS, EQUAL)
         SHIFT(FSLH, STAR)
+        SHIFT(CARET, AMPS)
+
+        SHIFT(GRAVE, TILDE)
+        SHIFT(SQT, DQT)
+        SHIFT(COMMA, DOT)
+        SHIFT(SEMI, COLON)
+        SHIFT(QMARK, EXCL)
+
+        SHIFT(LPAR, RPAR)
+        SHIFT(LBKT, RBKT)
+        SHIFT(LBRC, RBRC)
+        SHIFT(LT, GT)
 
         magic: magic {
             compatible = "zmk,behavior-hold-tap";

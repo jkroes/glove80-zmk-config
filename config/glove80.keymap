@@ -62,16 +62,14 @@ bind pc-specific layers to the thumb clusters on the pc layer
             >;
         };
 
-
-/*     ;: '" ?! ,. <> () [] {} \| `~ @# $% ^& -_ += /*     */
         layer_sym {
             bindings = <
-&none  &none  &none  &none  &none                                                          &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &none         &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none                                                          &none        &none       &none       &none       &none
+&none  &none  &none  &none  &none  &none                                            &none  GRAVE_TILDE  AT_HASH     DLLR_PRCNT  BSLH_PIPE   &none
+&none  &none  &none  &none  &none  &none                                            &none  MINUS_UNDER  PLUS_EQUAL  FSLH_STAR   CARET_AMPS  &none
+&none  &none  &none  &none  &none  &none                                            &none  SQT_DQT      COMMA_DOT   SEMI_COLON  QMARK_EXCL  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  LPAR_RPAR    LBKT_RBKT   LBRC_RBRC   LT_GT       &none
+&none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &none         &none        &none       &none       &none       &none
             >;
         };
 
