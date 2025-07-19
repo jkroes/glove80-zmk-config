@@ -42,12 +42,12 @@ bind pc-specific layers to the thumb clusters on the pc layer
 
         layer_macos {
             bindings = <
-&tog 1                &kp F2       &kp F3      &kp F4       &kp F5                                                                                               &kp F6      &kp F7       &kp F8      &kp F9          &kp F10
+&tog PC               &kp F2       &kp F3      &kp F4       &kp F5                                                                                               &kp F6      &kp F7       &kp F8      &kp F9          &kp F10
 &kp EQUAL             &kp N1       &kp N2      &kp N3       &kp N4      &kp N5                                                                           &kp N6  &kp N7      &kp N8       &kp N9      &kp N0          &kp MINUS
 &kp CAPS              &kp Q        &kp W       &kp E        &kp R       &kp T                                                                            &kp Y   &kp U       &kp I        &kp O       &kp P           &kp BSLH
 &caps_word            &hma(LCTRL)  &hms(LALT)  &hmd(LSHFT)  &hmf(LGUI)  &kp G                                                                            &kp H   &hmj(RGUI)  &hmk(RSHFT)  &hml(RALT)  &hmsemi(RCTRL)  &kp SQT
 &kp CAPS              &kp Z        &kp X       &kp C        &kp V       &kp B   &mt LGUI TAB  &kp LSHFT    &kp LALT  &none  &none        &esc_app 0 ESC  &kp N   &kp M       &kp COMMA    &kp DOT     &kp FSLH        &none
-&magic layer_magic 0  &kp GRAVE    &kp GRAVE   &kp LEFT     &kp RIGHT           LT_SYM(BSPC)  LT_NUM(DEL)      &none     &none  LT_NUM(RET)  LT_NAV(SPACE)           &kp UP      &kp DOWN     &kp LBKT    &kp RBKT        &none
+&magic MAGIC 0        &kp GRAVE    &kp GRAVE   &kp LEFT     &kp RIGHT           LT_SYM(BSPC)  LT_NUM(DEL)      &none     &none  LT_NUM(RET)  LT_NAV(SPACE)           &kp UP      &kp DOWN     &kp LBKT    &kp RBKT        &none
             >;
         };
 
@@ -59,40 +59,6 @@ ______  ______      ______  ______  ______       ______                         
 ______  &hma(LGUI)  ______  ______  &hmf(LCTRL)  ______                                                          ______  &hmj(RCTRL)  ______  ______  &hmsemi(RGUI)  ______
 ______  ______      ______  ______  ______       ______  &mt LCTRL TAB  ______  ______  ______  ______  &kp ESC  ______  ______       ______  ______  ______         ______
 ______  ______      ______  ______  ______               ______         ______  ______  ______  ______  ______           ______       ______  ______  ______         ______
-            >;
-        };
-
-        layer_sym {
-            bindings = <
-&none  &none   &none   &none   &none                                                           &none           &none          &none          &none            &none
-&none  &none   &none   &none   &none   &none                                            &none  &as TILDE GRAVE &as HASH AT    &as AMPS DLLR  &as PIPE BSLH    &none
-&none  &none   &none   &none   &none   &none                                            &none  &as UNDER MINUS &as EQUAL PLUS &as STAR FSLH  &as PRCNT CARET  &none
-&none  ______  ______  ______  ______  &none                                            &none  &as DQT SQT     &as DOT COMMA  &as COLON SEMI &as EXCL QMARK   &none
-&none  &none   &none   &none   &none   &none  &none  &none  &none  &none  &none  &none  &none  &as RPAR LPAR   &as RBKT LBKT  &as RBRC LBRC  &as GT LT        &none
-&none  &none   &none   &none   &none          &none  &none  &none  &none  &none  &none         &none           &none          &none          &none            &none
-            >;
-        };
-
-        layer_nav {
-            bindings = <
-&none  &none  &none  &none  &none                                                          &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &none         &none  &none  &none  &none  &none
-            >;
-        };
-
-// equal, slash, multiply, minus, plus, parens
-        layer_num {
-            bindings = <
-&none  &none  &none  &none  &none                                                                     &none       &none      &none         &none      &none
-&none  &none  &none  &none  &none  &none                                                     &none    &none       &kp KP_N0  &none         &none      &none
-&none  &none  &none  &none  &none  &none                                                     &none    &kp KP_N7   &kp KP_N8  &kp KP_N9     &none      &none
-&none  &none  &none  &none  &none  &none                                                     &none    &kp KP_N4   &kp KP_N5  &kp KP_N6     &none      &none
-&none  &none  &none  &none  &none  &none  &none     &none    &none  &none  &none  &none      &none    &kp KP_N1   &kp KP_N2  &kp KP_N3     &none      &none
-&none  &none  &none  &none  &none         &kp BSPC  &kp DEL  &none  &none  &none  &kp SPACE           &kp KP_DOT  &none      &kp KP_COMMA  &kp ENTER  &none
             >;
         };
 
